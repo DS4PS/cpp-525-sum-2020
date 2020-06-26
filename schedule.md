@@ -38,7 +38,7 @@ Chapter on Interrrupted Time Series [[PDF](https://github.com/DS4PS/cpp-525-spr-
 
 <br>
 <br>
-![](https://ds4ps.org/pe4ps-textbook/docs/FIGURE/TimeSeries/Picture3.4.png)
+![](https://ds4ps.org/pe4ps-textbook/docs/FIGURE/TimeSeries/Picture3.4.png =10x)
 
 <img src="https://ds4ps.org/pe4ps-textbook/docs/FIGURE/TimeSeries/Picture3.4.png" style="width: 200px;" />
 
