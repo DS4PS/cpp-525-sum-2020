@@ -116,14 +116,29 @@ Due MON Apr 6th
 <br>
 
 ----
+Panel models are necessary when group structure (farms A, B and C in this example) is correlated both with the level of treatment (amount of fertilizer used each season) and the outcome (some farms are more efficient). 
+
+If it is the land causing the productivity difference and land quality varies by farm, omitting the group ID (farm fixed effect) in the model would not bias the result. But it would make the model a lot less efficient (larger standard errors).
+
+If the management practices of the farm are driving outcomes then better managers use fertilizer more intensely, but they also do a dozen other things not captured by the model that will improve productivity. In this case the farm ID is a proxy for management, and omitting it would result in bias. 
+
+So although group ID is measured differently than variables you have used before (it is a factor or a set of dummy variables) it operates similarly to other controls. If it is uncorrelated with the treatment then adding it will not change the policy slope, but it will make the model more efficient (explain more of the residual). If the group ID is correlated with the treatment then adding it to the model will fix bias. 
+
+![](https://ds4ps.org/pe4ps-textbook/docs/p-041-panel-model-specification_files/figure-html/unnamed-chunk-4-1.png)
+![](https://ds4ps.org/pe4ps-textbook/docs/p-041-panel-model-specification_files/figure-html/unnamed-chunk-5-1.png)
+
+
+----
 
 [useful notes on interpretting output](https://www.princeton.edu/~otorres/Panel101.pdf)
 
 [random effects example](https://raw.githubusercontent.com/DS4PS/cpp-525-spr-2020/master/lectures/random-effects.R)
 
+This example explores the relationship between mileage and used-car price. Car models (e.g. lexus, ford, and honda) are correlated with price (a lexus is more expensive on average), but they are uncorrelatd with mileage. Car values are very different when new, but each 10,000 miles driven reduces the value by the same amount.
+
 ![](https://raw.githubusercontent.com/DS4PS/cpp-525-spr-2020/master/assets/img/random-effects.png)
 
-Group-level variable is correlated with the outcome, but uncorrelated with the policy variable. Thus omission does not cause bias, but inclusion increases efficiency. 
+Group-level variable is correlated with the outcome, but uncorrelated with the policy variable. Thus omission does not cause bias, but inclusion increases efficiency allowing the model to use a separate intercept for each group and thus moving regression lines closer to the data, reducing the model error. 
 
 Recall the [taxonomy of control variables](https://github.com/DS4PS/cpp-523-spr-2020/raw/master/lectures/taxonomy-of-control-variables.pdf).
 
