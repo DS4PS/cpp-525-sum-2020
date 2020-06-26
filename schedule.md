@@ -113,6 +113,11 @@ Due MON Apr 6th
 
 <a class="uk-button uk-button-default" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
 
+**Reference:**
+
+[useful notes on interpretting output](https://www.princeton.edu/~otorres/Panel101.pdf)
+
+
 <br>
 
 ----
@@ -129,8 +134,6 @@ So although group ID is measured differently than variables you have used before
 
 
 ----
-
-[useful notes on interpretting output](https://www.princeton.edu/~otorres/Panel101.pdf)
 
 [random effects example](https://raw.githubusercontent.com/DS4PS/cpp-525-spr-2020/master/lectures/random-effects.R)
 
