@@ -49,6 +49,11 @@ Y = b0 + (b1)(T) + (b2)(D) + (b3)(P) + e
 # b1 = pre-intervention trend 
 # b2 = discrete change after intervention 
 # b3 = sustained change to the slope after intervention
+
+# Where:
+# T = time count variable 
+# D = treatment dummy, 0 before , 1 after 
+# P = time since intervention count
 ```
 
 <br>
