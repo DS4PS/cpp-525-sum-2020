@@ -82,6 +82,8 @@ Varieties of the counterfactual: [lecture notes](https://github.com/DS4PS/cpp-52
 
 **Reference:**
 
+Gertler, P. J., Martinez, S., Premand, P., Rawlings, L. B., & Vermeersch, C. M. (2016). Impact evaluation in practice. The World Bank. CH-07 Difference-in-Differences [[link](https://openknowledge.worldbank.org/handle/10986/25030)]
+
 Wing, C., Simon, K., & Bello-Gomez, R. A. (2018). Designing difference in difference studies: best practices for public health policy research. Annual review of public health, 39. [[pdf](https://www.annualreviews.org/doi/pdf/10.1146/annurev-publhealth-040617-013507)] 
 
 <br>
