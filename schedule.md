@@ -38,9 +38,7 @@ Chapter on Interrrupted Time Series [[PDF](https://github.com/DS4PS/cpp-525-spr-
 
 <br>
 <br>
-![](https://ds4ps.org/pe4ps-textbook/docs/FIGURE/TimeSeries/Picture3.4.png){width=400px}
-
-<img src="https://ds4ps.org/pe4ps-textbook/docs/FIGURE/TimeSeries/Picture3.4.png" style="width: 400px;" />
+![](https://ds4ps.org/pe4ps-textbook/docs/FIGURE/TimeSeries/Picture3.4.png){:width="50%"}
 
 ```r
 Y = b0 + (b1)(T) + (b2)(D) + (b3)(P) + e
