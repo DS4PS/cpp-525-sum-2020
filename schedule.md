@@ -35,6 +35,22 @@ Bernal, J. L., Cummins, S., & Gasparrini, A. (2017). Interrupted time series reg
 
 Chapter on Interrrupted Time Series [[PDF](https://github.com/DS4PS/cpp-525-spr-2020/raw/master/pubs/cook-campbell-shadish-interrupted-time-series.pdf)]:  From Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). *Experimental and quasi-experimental designs for generalized causal inference.* Boston: Houghton Mifflin.
 
+
+<br>
+
+![](https://ds4ps.org/pe4ps-textbook/docs/FIGURE/TimeSeries/Picture5.png)
+<br>
+![](https://ds4ps.org/pe4ps-textbook/docs/FIGURE/TimeSeries/Picture3.4.png)
+
+```r
+# Interrupted Time Series Model 
+Y = b0 + (b1)(T) + (b2)(D) + (b3)(P) + e
+
+# b1 = pre-intervention trend 
+# b2 = discrete change after intervention 
+# b3 = sustained change to the slope after intervention
+```
+
 <br>
 
 ----
