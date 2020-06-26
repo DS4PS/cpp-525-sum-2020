@@ -14,7 +14,7 @@ info:
  course_number: CPP 525 
  course_level: Graduate 
  course_website: 'https://canvas.asu.edu/courses/41574'
- course_start_end_dates: March 16 to May 01, 2020 
+ course_start_end_dates: July 1 to August 11, 2020 
  course_prerequisites: CPP 523 and CPP 526
  class_meets_when:  Asynchronous  
  class_meets_where:  ''
@@ -23,15 +23,15 @@ info:
  discussion_board_url: 'https://ds4ps.org/cpp-525-spr-2020/help/'
 
 instructor:
--  name: Irene Tsapara, PhD
+-  name: David Selby, PhD
    title: Professor
-   email: irene.tsapara@asu.edu
+   email: jdselby@asu.edu
    office_location: virtual
    website_url: 
-   github_url: 'https://github.com/itsapara' 
+   github_url: 'https://github.com/Dselby86' 
    twitter_url: 
    scholar_url: 
-   linked_in_url: 'https://www.linkedin.com/in/irene-tsapara-8a1a04b5/'
+   linked_in_url: 'https://www.linkedin.com/in/david-selby-64699a46/'
    office_hours_time: By appointment
    office_hours_location:  Zoom
    office_hours_app_url:  'https://calendly.com/irene-tsapara/15min'
