@@ -15,7 +15,7 @@ info:
  course_level: Graduate 
  course_website: 'https://canvas.asu.edu/courses/41574'
  course_start_end_dates: March 16 to May 01, 2020 
- course_prerequisites: CPP 523
+ course_prerequisites: CPP 523 and CPP 526
  class_meets_when:  Asynchronous  
  class_meets_where:  ''
  review_sessions_when: TBD 
