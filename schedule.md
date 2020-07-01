@@ -23,7 +23,7 @@ Submit Button - <a class="uk-button uk-button-primary" href="{{page.canvas.assig
 * [LECTURE](https://ds4ps.org/pe4ps-textbook/docs/p-020-time-series.html)
 * [LAB](https://ds4ps.org/pe4ps-textbook/labs/time-series-lab.html)
 
-**DUE: MONDAY March 23rd**
+**DUE: THURS July 9th**
 
 <a class="uk-button uk-button-default" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
 
@@ -74,7 +74,7 @@ Y = b0 + (b1)(T) + (b2)(D) + (b3)(P) + e
 * [overview video](https://asu.zoom.us/rec/play/tMIrd7yvqDo3TNfD4gSDV_V5W425e_6s2yBNrqBcxUixASFRY1GmN7VDNuqKJy2LLzjKb6H4yI5HWMZw?continueMode=true&_x_zm_rtaid=a3eEFLG8Qtiy1qBhz5Gnyg.1586645508130.02d1fbabc21b564365fde85fb34937b4&_x_zm_rhtaid=598)
 * [LAB](https://ds4ps.org/pe4ps-textbook/labs/diff-in-diff-lab.html)
 
-Due MON Mar 30th
+**Due THURS July 16th**
 
 <a class="uk-button uk-button-default" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
 
@@ -109,7 +109,7 @@ Wing, C., Simon, K., & Bello-Gomez, R. A. (2018). Designing difference in differ
 * [overview video](https://asu.zoom.us/rec/play/vZQrcbj9qTo3T9aSuQSDC6dxW9S7Kais0SVP-qUKykm9B3QGMFahYeMVZLENnE0QqLfC7HHfx_JInrRR?continueMode=true&_x_zm_rtaid=a3eEFLG8Qtiy1qBhz5Gnyg.1586645508130.02d1fbabc21b564365fde85fb34937b4&_x_zm_rhtaid=598)
 * [LAB](https://ds4ps.org/pe4ps-textbook/labs/fixed-effects-lab.html)
 
-Due MON Apr 6th
+**Due THURS July 23** 
 
 <a class="uk-button uk-button-default" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
 
@@ -182,7 +182,7 @@ Random effects are Type A controls. Fixed effects are Type B controls:
 * [overview of iv regression (video)](https://asu.zoom.us/rec/play/u5x-I7r9-Dw3GYLH4gSDB_5xW9TpK6qs0HQY-qIJmEazVHQBNwCvNLETM-KIqBwzOPr2gZymGDn8qDSn?continueMode=true&_x_zm_rtaid=a3eEFLG8Qtiy1qBhz5Gnyg.1586645508130.02d1fbabc21b564365fde85fb34937b4&_x_zm_rhtaid=598)
 
 
-Due MON Apr 13th
+**Due THURS July 30th** 
 
 <a class="uk-button uk-button-default" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
 
@@ -207,7 +207,7 @@ Due MON Apr 13th
 * [LECTURE](https://ds4ps.org/pe4ps-textbook/docs/p-060-reg-discontinuity.html)
 * [LAB](https://ds4ps.org/pe4ps-textbook/labs/regression-discontinuity-lab.html)
 
-Due MON Apr 20th
+**Due THURS Aug 6th**
 
 <a class="uk-button uk-button-default" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
 
@@ -236,7 +236,7 @@ Due MON Apr 20th
 * [example script](examples/logistic-regression-example.R)  
 * [video](https://asu.zoom.us/rec/share/xfMlBJHy_E5IZ7fGsnvxB5UzGKTreaa8hiAWqfIPnhtzDDh-1wytiZ5OYSgLp0WQ)  
 
-Due MON Apr 27th
+**Due TUES Aug 11th**
 
 <a class="uk-button uk-button-default" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
 
@@ -248,14 +248,14 @@ Due MON Apr 27th
 
 
 
-## Week 7 - Propensity Score Matching 
+## Week 6 - Propensity Score Matching 
 
 * [LECTURE](https://ds4ps.org/pe4ps-textbook/docs/p-080-matching.html)
 * [LAB](https://ds4ps.org/pe4ps-textbook/labs/matching-lab.html)
 
 [video overview](https://asu.zoom.us/rec/share/4MpkE7Xr2VhOZdbI4mOFR7caHY_6eaa8gSdKq_cFn0ecqyECXG2G3ve0yarS9z00?startTime=1588373097000)
 
-Due MON May 4th
+**Due TUES Aug 11th**
 
 <a class="uk-button uk-button-default" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
 
