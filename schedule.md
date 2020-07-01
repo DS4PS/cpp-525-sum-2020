@@ -228,7 +228,9 @@ Random effects are Type A controls. Fixed effects are Type B controls:
 
 
 
-## Week 6 - Logistic Regression 
+## Week 6 
+
+### Logistic Regression 
 
 * [LECTURE](https://ds4ps.org/pe4ps-textbook/docs/p-070-logistic-regression.html)
 * [LAB](https://ds4ps.org/pe4ps-textbook/labs/logit-lab.html)
@@ -236,28 +238,21 @@ Random effects are Type A controls. Fixed effects are Type B controls:
 * [example script](examples/logistic-regression-example.R)  
 * [video](https://asu.zoom.us/rec/share/xfMlBJHy_E5IZ7fGsnvxB5UzGKTreaa8hiAWqfIPnhtzDDh-1wytiZ5OYSgLp0WQ)  
 
-**Due TUES Aug 11th**
 
-<a class="uk-button uk-button-default" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
-
-<br>
-
-----
-
-<br>
-
-
-
-## Week 6 - Propensity Score Matching 
+### Propensity Score Matching 
 
 * [LECTURE](https://ds4ps.org/pe4ps-textbook/docs/p-080-matching.html)
 * [LAB](https://ds4ps.org/pe4ps-textbook/labs/matching-lab.html)
 
 [video overview](https://asu.zoom.us/rec/share/4MpkE7Xr2VhOZdbI4mOFR7caHY_6eaa8gSdKq_cFn0ecqyECXG2G3ve0yarS9z00?startTime=1588373097000)
 
-**Due TUES Aug 11th**
+
+**Both labs due TUES Aug 11th**
 
 <a class="uk-button uk-button-default" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
+
+
+
 
 
 
