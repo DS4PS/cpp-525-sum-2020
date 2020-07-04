@@ -139,13 +139,43 @@ So although group ID is measured differently than variables you have used before
 
 This example explores the relationship between mileage and used-car price. Car models (e.g. lexus, ford, and honda) are correlated with price (a lexus is more expensive on average), but they are uncorrelatd with mileage (lexus owners and honda owners are driving similar amounts each year). Car values are very different when new, but each 10,000 miles driven reduces the value by the same amount.
 
+```r
+# pooled model - all cars share same intercept
+price = b0 + b1 × mileage + e
+
+# random effects model 
+price[j] = a[j] + b1 × mileage + e
+```
+
 ![](https://raw.githubusercontent.com/DS4PS/cpp-525-spr-2020/master/assets/img/random-effects.png)
+
+Where the data would be structured as follows:
+
+```r
+# intercept in pooled model:
+# all cars share one intercept 
+
+      lexus |  y  1  x  | 
+b0 =   ford |  y  1  x  |
+      honda |  y  1  x  |
+
+# intercept in grouped model:
+# each j (car company) has its own
+
+        lexus |  y  1  0  0  x  | 
+a[j] =   ford |  y  0  1  0  x  |
+        honda |  y  0  0  1  x  |
+```
 
 Group-level variable is correlated with the outcome, but uncorrelated with the policy variable. Thus omission does not cause bias, but inclusion increases efficiency allowing the model to use a separate intercept for each group and thus moving regression lines closer to the data, reducing the model error. 
 
+*Note that this is an over-simplified presentation of the topic. The terms fixed and random effects are used differently depending on discipline (see [Gelman's insightful discussion](https://statmodeling.stat.columbia.edu/2005/01/25/why_i_dont_use/)) and the model are estimated using different technique (see [Stoudt blog, 2017](https://rlbarter.github.io/Practical-Statistics/2017/03/03/fixed-mixed-and-random-effects/)).*
+
+---
+
 Recall the [taxonomy of control variables](https://github.com/DS4PS/cpp-523-spr-2020/raw/master/lectures/taxonomy-of-control-variables.pdf).
 
-Random effects are Type A controls. Fixed effects are Type B controls:
+Random effects are like Type A controls. Fixed effects are like Type B controls:
 
 ![](https://raw.githubusercontent.com/DS4PS/cpp-525-spr-2020/master/assets/img/taxonomy-of-controls2.png)
 
