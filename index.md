@@ -14,11 +14,11 @@ info:
  course_number: CPP 525 
  course_level: Graduate 
  course_website: 'https://canvas.asu.edu/courses/57030'
- course_start_end_dates: July 1 to August 11, 2020 
+ course_start_end_dates: October 12 to December 14, 2020 
  course_prerequisites: CPP 523 and CPP 526
  class_meets_when:  Asynchronous  
  class_meets_where:  ''
- review_sessions_when: Wednesdays at 2pm 
+ review_sessions_when: Tuesdays at 7pm 
  review_sessions_where: 'https://asu.zoom.us/j/6829300585'
  discussion_board_url: 'https://ds4ps.org/cpp-525-sum-2020/help/'
 
