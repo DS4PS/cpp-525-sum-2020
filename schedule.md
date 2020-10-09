@@ -46,7 +46,7 @@ Submit Button - <a class="uk-button uk-button-primary" href="{{page.canvas.assig
 
 ## Week 1 - Interrupted Time Series 
 
-**Due {{page.labs.lab-01}}**
+
 
 <a class="uk-button uk-button-default" style="width:130px" href="https://ds4ps.org/pe4ps-textbook/docs/p-020-time-series.html">LECTURE</a>
 <br><br>
@@ -55,6 +55,8 @@ Submit Button - <a class="uk-button uk-button-primary" href="{{page.canvas.assig
 
 <br>
 <hr>
+
+**Due {{page.labs.lab-01}}**
 
 <a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
  
