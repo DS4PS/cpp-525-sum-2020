@@ -50,10 +50,17 @@ Submit Button - <a class="uk-button uk-button-primary" href="{{page.canvas.assig
 <br><br>
 <a class="uk-button uk-button-default" style="width:150px" href="https://ds4ps.org/pe4ps-textbook/labs/time-series-lab.html">LAB</a>
 
+
+<br>
+<hr>
+
 **Due {{page.labs.lab-01}}**
 
 <a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
+
 <br> 
+<hr>
+<br>
 
 **Resources:**
 
