@@ -144,12 +144,13 @@ Wing, C., Simon, K., & Bello-Gomez, R. A. (2018). Designing difference in differ
 <hr>
 
 <a class="uk-button uk-button-default" style="width:130px" href="https://ds4ps.org/pe4ps-textbook/docs/p-040-fixed-effects.html">LECTURE</a>
-<br><br>
+
+[LECTURE NOTES](https://github.com/DS4PS/cpp-525-spr-2020/raw/master/lectures/p-23-fixed-effects.pdf) 
+
 <a class="uk-button uk-button-default" style="width:130px" href="https://ds4ps.org/pe4ps-textbook/labs/fixed-effects-lab.html">LAB</a>
 <br><br>
 <a class="uk-button uk-button-default" style="width:130px" href="https://asu.zoom.us/rec/play/vZQrcbj9qTo3T9aSuQSDC6dxW9S7Kais0SVP-qUKykm9B3QGMFahYeMVZLENnE0QqLfC7HHfx_JInrRR?continueMode=true&_x_zm_rtaid=a3eEFLG8Qtiy1qBhz5Gnyg.1586645508130.02d1fbabc21b564365fde85fb34937b4&_x_zm_rhtaid=598">VIDEO</a>
 
-[LECTURE NOTES](https://github.com/DS4PS/cpp-525-spr-2020/raw/master/lectures/p-23-fixed-effects.pdf) 
 
 **Due {{page.labs.lab-03}}**
 
@@ -246,29 +247,83 @@ Recall the [taxonomy of control variables](https://github.com/DS4PS/cpp-523-spr-
 
 ## Week 4 - Instrumental Variables 
 
-<br>
+<hr>
 
-* [LECTURE NOTES](https://github.com/DS4PS/cpp-525-spr-2020/raw/master/lectures/p-24-instrumental-variables.pdf)
-* [LECTURE CHAPTER](https://ds4ps.org/pe4ps-textbook/docs/p-050-instrumental-variables.html)
-* [LAB](https://ds4ps.org/pe4ps-textbook/labs/instrumental-variables.html)
-<br>
+<a class="uk-button uk-button-default" style="width:130px" href="https://ds4ps.org/pe4ps-textbook/docs/p-050-instrumental-variables.html">LECTURE</a>
 
-* [iv regression example](https://ds4ps.org/cpp-525-spr-2020/lectures/p-25-iv-example.html)
-* [overview of iv regression (video)](https://asu.zoom.us/rec/play/u5x-I7r9-Dw3GYLH4gSDB_5xW9TpK6qs0HQY-qIJmEazVHQBNwCvNLETM-KIqBwzOPr2gZymGDn8qDSn?continueMode=true&_x_zm_rtaid=a3eEFLG8Qtiy1qBhz5Gnyg.1586645508130.02d1fbabc21b564365fde85fb34937b4&_x_zm_rhtaid=598)
+[LECTURE NOTES](https://github.com/DS4PS/cpp-525-spr-2020/raw/master/lectures/p-24-instrumental-variables.pdf) 
+
+<a class="uk-button uk-button-default" style="width:130px" href="https://ds4ps.org/pe4ps-textbook/labs/instrumental-variables.html">LAB</a>
+<br><br>
+<a class="uk-button uk-button-default" style="width:130px" href="https://asu.zoom.us/rec/play/u5x-I7r9-Dw3GYLH4gSDB_5xW9TpK6qs0HQY-qIJmEazVHQBNwCvNLETM-KIqBwzOPr2gZymGDn8qDSn?continueMode=true&_x_zm_rtaid=a3eEFLG8Qtiy1qBhz5Gnyg.1586645508130.02d1fbabc21b564365fde85fb34937b4&_x_zm_rhtaid=598">VIDEO</a>
+
+[iv regression example](https://ds4ps.org/cpp-525-spr-2020/lectures/p-25-iv-example.html)
 
 
 **Due {{page.labs.lab-04}}**
 
 <a class="uk-button uk-button-default" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
 
-<br>
-<br>
-
 <hr>
 
-<br>
-<br>
 
+**Example:**
+
+```r
+library( stargazer )
+
+URL <- "https://ds4ps.org/cpp-525-spr-2020/lectures/data/iv-reg-example.csv"
+dat <- read.csv( URL )
+
+# Full Model - Correct Slopes
+full.model <- lm( y ~ x1 + x2 + x3, data=dat )
+
+# Naive Model (biased slopes)
+naive.model <- lm( y ~ x1 + x2, data=dat  )
+
+# Instrumental Variable Correction to Naive Model
+first.stage <- lm( x1 ~ z + x2, data=dat )
+x1_hat <- fitted( first.stage )
+second.stage <- lm( y ~ x1_hat + x2, data=dat  )
+
+stargazer( full.model, naive.model, second.stage,
+           column.labels = c("Full Model","Naive Model","IV Model"),
+           type="text", 
+           omit.stat = c("rsq","ser","f","adj.rsq"), 
+           digits=2 )
+ 
+===================================================
+                      Dependent variable:          
+             --------------------------------------
+                               y                   
+             Full Model  Naive Model    IV Model   
+                (1)          (2)           (3)     
+---------------------------------------------------
+x1            -2.00***    -3.54***                 
+              (0.0001)     (0.03)                  
+                                                   
+x1_hat                                  -1.89***   
+                                         (0.24)    
+                                                   
+x2            23.00***    23.17***      24.31***   
+              (0.0003)     (0.22)        (0.91)    
+                                                   
+x3            14.00***                             
+              (0.001)                              
+                                                   
+Constant       -21.05   150,496.50*** 453,849.70***
+              (19.11)    (12,387.91)   (63,763.40) 
+                                                   
+---------------------------------------------------
+Observations   1,000        1,000         1,000    
+===================================================
+Note:                   *p<0.1; **p<0.05; ***p<0.01
+
+```
+<br>
+<br>
+<br>
+<br>
 
 
 
@@ -279,12 +334,16 @@ Recall the [taxonomy of control variables](https://github.com/DS4PS/cpp-523-spr-
 
 ## Week 5 - Regression Discontinuity Design 
 
-* [LECTURE](https://ds4ps.org/pe4ps-textbook/docs/p-060-reg-discontinuity.html)
-* [LAB](https://ds4ps.org/pe4ps-textbook/labs/regression-discontinuity-lab.html)
+<hr>
+<a class="uk-button uk-button-default" style="width:130px" href="https://ds4ps.org/pe4ps-textbook/docs/p-060-reg-discontinuity.html">LECTURE</a>
+<br><br>
+<a class="uk-button uk-button-default" style="width:130px" href="https://ds4ps.org/pe4ps-textbook/labs/regression-discontinuity-lab.html">LAB</a>
 
 **Due {{page.labs.lab-05}}**
 
 <a class="uk-button uk-button-default" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
+
+<hr>
 
 <br>
 
@@ -308,30 +367,23 @@ Recall the [taxonomy of control variables](https://github.com/DS4PS/cpp-523-spr-
 
 ## Week 6 - Logistic Regression 
 
-**Due {{page.labs.lab-06}}**
-
-
-<br>
+<hr>
 
 <a class="uk-button uk-button-default" style="width:130px" href="https://ds4ps.org/pe4ps-textbook/docs/p-070-logistic-regression.html">LECTURE</a>
 <br><br>
 <a class="uk-button uk-button-default" style="width:130px" href="https://ds4ps.org/pe4ps-textbook/labs/logit-lab.html">LAB</a>
+<br><br>
+<a class="uk-button uk-button-default" style="width:130px" href="https://asu.zoom.us/rec/share/xfMlBJHy_E5IZ7fGsnvxB5UzGKTreaa8hiAWqfIPnhtzDDh-1wytiZ5OYSgLp0WQ">VIDEO</a>
 
+[example script](examples/logistic-regression-example.R) 
 
-<br>
-<hr>
+**Due {{page.labs.lab-06}}**
 
 <a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
  
 <hr>
-<br>
 
-**Resource:**
-
-* [video](https://asu.zoom.us/rec/share/xfMlBJHy_E5IZ7fGsnvxB5UzGKTreaa8hiAWqfIPnhtzDDh-1wytiZ5OYSgLp0WQ)  
-* [example script](examples/logistic-regression-example.R) 
-
-<br>
+**Example:**
 
 ```r
 # DATA
@@ -482,6 +534,10 @@ p.180 - p.170
 ```
 
 <br>
+<br>
+<hr>
+<br>
+<br>
 
 
 
@@ -491,17 +547,19 @@ p.180 - p.170
 
 ## Week 7 - Propensity Score Matching 
 
-* [LECTURE](https://ds4ps.org/pe4ps-textbook/docs/p-080-matching.html)
-* [LAB](https://ds4ps.org/pe4ps-textbook/labs/matching-lab.html)
+<hr>
 
-[video overview](https://asu.zoom.us/rec/share/4MpkE7Xr2VhOZdbI4mOFR7caHY_6eaa8gSdKq_cFn0ecqyECXG2G3ve0yarS9z00?startTime=1588373097000)
-
+<a class="uk-button uk-button-default" style="width:130px" href="https://ds4ps.org/pe4ps-textbook/docs/p-080-matching.html">LECTURE</a>
+<br><br>
+<a class="uk-button uk-button-default" style="width:130px" href="https://ds4ps.org/pe4ps-textbook/labs/matching-lab.html">LAB</a>
+<br><br>
+<a class="uk-button uk-button-default" style="width:130px" href="https://asu.zoom.us/rec/share/4MpkE7Xr2VhOZdbI4mOFR7caHY_6eaa8gSdKq_cFn0ecqyECXG2G3ve0yarS9z00?startTime=1588373097000">VIDEO</a>
 
 **Due {{page.labs.lab-07}}**
 
 <a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
 
-
+<hr>
 
 
 
@@ -515,9 +573,6 @@ p.180 - p.170
 
 <br>
 <br>
-
------
-
 <br>
 <br>
 
