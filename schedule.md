@@ -217,7 +217,8 @@ Group-level variable is correlated with the outcome, but uncorrelated with the p
 
 Recall the [taxonomy of control variables](https://github.com/DS4PS/cpp-523-spr-2020/raw/master/lectures/taxonomy-of-control-variables.pdf).
 
-Random effects are like Type A controls. Fixed effects are like Type B controls:
+* Random effects are like Type A controls  
+* Fixed effects are like Type B controls  
 
 ![](https://raw.githubusercontent.com/DS4PS/cpp-525-spr-2020/master/assets/img/taxonomy-of-controls2.png)
 
