@@ -100,9 +100,13 @@ Y = b0 + (b1)(T) + (b2)(D) + (b3)(P) + e
 
 ## Week 2 - Difference-in-Difference Models 
 
-* [LECTURE](https://ds4ps.org/pe4ps-textbook/docs/p-030-diff-in-diff.html)
-* [overview video](https://asu.zoom.us/rec/play/tMIrd7yvqDo3TNfD4gSDV_V5W425e_6s2yBNrqBcxUixASFRY1GmN7VDNuqKJy2LLzjKb6H4yI5HWMZw?continueMode=true&_x_zm_rtaid=a3eEFLG8Qtiy1qBhz5Gnyg.1586645508130.02d1fbabc21b564365fde85fb34937b4&_x_zm_rhtaid=598)
-* [LAB](https://ds4ps.org/pe4ps-textbook/labs/diff-in-diff-lab.html)
+<hr>
+
+<a class="uk-button uk-button-default" style="width:130px" href="https://ds4ps.org/pe4ps-textbook/docs/p-030-diff-in-diff.html">LECTURE</a>
+<br><br>
+<a class="uk-button uk-button-default" style="width:130px" href="https://ds4ps.org/pe4ps-textbook/labs/diff-in-diff-lab.html">LAB</a>
+<br><br>
+<a class="uk-button uk-button-default" style="width:130px" href="https://asu.zoom.us/rec/play/tMIrd7yvqDo3TNfD4gSDV_V5W425e_6s2yBNrqBcxUixASFRY1GmN7VDNuqKJy2LLzjKb6H4yI5HWMZw?continueMode=true&_x_zm_rtaid=a3eEFLG8Qtiy1qBhz5Gnyg.1586645508130.02d1fbabc21b564365fde85fb34937b4&_x_zm_rhtaid=598">VIDEO</a>
 
 **Due {{page.labs.lab-02}}**
 
@@ -137,23 +141,28 @@ Wing, C., Simon, K., & Bello-Gomez, R. A. (2018). Designing difference in differ
 
 ## Week 3 - Panel Data with Fixed Effects 
 
-* [LECTURE NOTES](https://github.com/DS4PS/cpp-525-spr-2020/raw/master/lectures/p-23-fixed-effects.pdf)
-* [LECTURE CHAPTER](https://ds4ps.org/pe4ps-textbook/docs/p-040-fixed-effects.html)
-* [overview video](https://asu.zoom.us/rec/play/vZQrcbj9qTo3T9aSuQSDC6dxW9S7Kais0SVP-qUKykm9B3QGMFahYeMVZLENnE0QqLfC7HHfx_JInrRR?continueMode=true&_x_zm_rtaid=a3eEFLG8Qtiy1qBhz5Gnyg.1586645508130.02d1fbabc21b564365fde85fb34937b4&_x_zm_rhtaid=598)
-* [LAB](https://ds4ps.org/pe4ps-textbook/labs/fixed-effects-lab.html)
+<hr>
+
+<a class="uk-button uk-button-default" style="width:130px" href="https://ds4ps.org/pe4ps-textbook/docs/p-040-fixed-effects.html">LECTURE</a>
+<br><br>
+<a class="uk-button uk-button-default" style="width:130px" href="https://ds4ps.org/pe4ps-textbook/labs/fixed-effects-lab.html">LAB</a>
+<br><br>
+<a class="uk-button uk-button-default" style="width:130px" href="https://asu.zoom.us/rec/play/vZQrcbj9qTo3T9aSuQSDC6dxW9S7Kais0SVP-qUKykm9B3QGMFahYeMVZLENnE0QqLfC7HHfx_JInrRR?continueMode=true&_x_zm_rtaid=a3eEFLG8Qtiy1qBhz5Gnyg.1586645508130.02d1fbabc21b564365fde85fb34937b4&_x_zm_rhtaid=598">VIDEO</a>
+
+[LECTURE NOTES](https://github.com/DS4PS/cpp-525-spr-2020/raw/master/lectures/p-23-fixed-effects.pdf) 
 
 **Due {{page.labs.lab-03}}**
 
 <a class="uk-button uk-button-default" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
 
+<hr>
+
 **Reference:**
 
-[useful notes on interpretting output](https://www.princeton.edu/~otorres/Panel101.pdf)
-
+[notes on interpretting output](https://www.princeton.edu/~otorres/Panel101.pdf)
 
 <br>
 
-----
 Panel models are necessary when group structure (farms A, B and C in this example) is correlated both with the level of treatment (amount of fertilizer used each season) and the outcome (some farms are more efficient). 
 
 If it is the land causing the productivity difference and land quality varies by farm, omitting the group ID (farm fixed effect) in the model would not bias the result. But it would make the model a lot less efficient (larger standard errors).
@@ -235,6 +244,8 @@ Random effects are like Type A controls. Fixed effects are like Type B controls:
 
 
 ## Week 4 - Instrumental Variables 
+
+<br>
 
 * [LECTURE NOTES](https://github.com/DS4PS/cpp-525-spr-2020/raw/master/lectures/p-24-instrumental-variables.pdf)
 * [LECTURE CHAPTER](https://ds4ps.org/pe4ps-textbook/docs/p-050-instrumental-variables.html)
