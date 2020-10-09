@@ -525,4 +525,8 @@ p.180 - p.170
 em {
     color: black;
 }
+  
+.uk-button-primary {
+    background-color: #f08d14;
+}
 </style>
