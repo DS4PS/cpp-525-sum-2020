@@ -53,20 +53,18 @@ Submit Button - <a class="uk-button uk-button-primary" href="{{page.canvas.assig
 <br><br>
 <a class="uk-button uk-button-default" style="width:130px" href="https://ds4ps.org/pe4ps-textbook/labs/time-series-lab.html">LAB</a>
 
+**Due {{page.labs.lab-01}}**
+
+<a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
+ 
+<hr>
+
 **Resources:**
 
 Bernal, J. L., Cummins, S., & Gasparrini, A. (2017). Interrupted time series regression for the evaluation of public health interventions: a tutorial. International journal of epidemiology, 46(1), 348-355. [[PDF](http://www.ag-myresearch.com/uploads/1/3/8/6/13864925/2016_lopezbernal_ije.pdf)]
 
 Chapter on Interrrupted Time Series [[PDF](https://github.com/DS4PS/cpp-525-spr-2020/raw/master/pubs/cook-campbell-shadish-interrupted-time-series.pdf)]:  From Shadish, W. R., Cook, T. D., & Campbell, D. T. (2002). *Experimental and quasi-experimental designs for generalized causal inference.* Boston: Houghton Mifflin.
 
-<hr>
-
-**Due {{page.labs.lab-01}}**
-
-<a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
- 
-<hr>
-<br>
 <br>
 
 ![](https://ds4ps.org/pe4ps-textbook/docs/FIGURE/TimeSeries/Picture3.4.png){:width="50%"}
@@ -91,11 +89,10 @@ Y = b0 + (b1)(T) + (b2)(D) + (b3)(P) + e
 
 
 <br>
-
-----
-
 <br>
-
+<hr>
+<br>
+<br>
 
 
 
@@ -109,9 +106,9 @@ Y = b0 + (b1)(T) + (b2)(D) + (b3)(P) + e
 
 **Due {{page.labs.lab-02}}**
 
-<a class="uk-button uk-button-default" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
+<a class="uk-button uk-button-primary" href="{{page.canvas.assignment_url}}">SUBMIT LAB</a>
 
-<br>
+<hr>
 
 **Review:** 
 
@@ -125,12 +122,13 @@ Gertler, P. J., Martinez, S., Premand, P., Rawlings, L. B., & Vermeersch, C. M. 
 
 Wing, C., Simon, K., & Bello-Gomez, R. A. (2018). Designing difference in difference studies: best practices for public health policy research. Annual review of public health, 39. [[pdf](https://www.annualreviews.org/doi/pdf/10.1146/annurev-publhealth-040617-013507)] 
 
-<br>
 
-----
 
 <br>
-
+<br>
+<hr>
+<br>
+<br>
 
 
 
