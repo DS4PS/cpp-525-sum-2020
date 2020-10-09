@@ -27,6 +27,19 @@ Submit Button - <a class="uk-button uk-button-primary" href="{{page.canvas.assig
 <br><br>
 <br><br>
 
+**COURSE CONTENT:**
+
+-----------------------
+
+* TOC
+{:toc}
+
+-----------------------
+
+<br>
+<br>
+
+
 
 
 
