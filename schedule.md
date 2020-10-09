@@ -399,13 +399,9 @@ head( dat )
 # 6         1  160    59 1.06
 
 
-
 #### LINEAR PROBABILITY MODEL 
-
 m1 <- lm( Admission ~ LSAT + Essay + GPA, data=dat )
 summary( m1 )
-
-
 
 # Marginal effects comparison:
 #
@@ -414,7 +410,6 @@ summary( m1 )
 #
 # Which of these three things should I spend
 # time on to improve my likelihood of admissions? 
-
 
 sd.lsat <- sd( dat$LSAT )
 sd.essay <- sd( dat$Essay )
@@ -429,31 +424,21 @@ sd.lsat * b1     # gains from improvement in LSAT
 sd.essay * b2    # gains from improvement in essay 
 sd.gpa * sd.gpa  # gains from improvement in gpa
 
-
-
 # predicted prob of success (admissions) for a specific individual:
-
 gpa <- 3.0
 lsat <- 145
 essay <- 90 
-
 b0 + b1*lsat + b2*essay + b3*gpa
 
 
-
 #### LOGIT MODEL
-
 m2 <- glm( Admission ~ LSAT + Essay + GPA, data = dat, family = "binomial" )
 summary( m2 )
 
-
-# logit link function 
-
-p = 1 / ( 1 + exp( - ( b0 + b1*x1 + b2*x2 ) ) )
-
+# logit link function: p is prob of success
+p <- 1 / ( 1 + exp( - ( b0 + b1*x1 + b2*x2 ) ) )
 
 # predicted prob of success (admissions) for a specific individual:
-
 b0 <- m2$coefficients[1]
 b1 <- m2$coefficients[2]
 b2 <- m2$coefficients[3]
@@ -469,20 +454,15 @@ y.hat <- b0 + b1*lsat + b2*essay + b3*gpa
 # convert log-odds to probabilities
 1 / ( 1 + exp( - ( y.hat ) ) )
 
-
 # marginal effects comparison:
-#
 # We must "center" other variables 
 # to look at marginal effects of one (LSAT here): 
 
 gpa <- mean( dat$GPA )  
 essay <- mean( dat$Essay ) 
 lsat <- 150
-
 y.hat <- b0 + b1*lsat + b2*essay + b3*gpa
-
 1 / ( 1 + exp( - ( y.hat ) ) )
-
 
 
 # Expected gains change greatly depending
