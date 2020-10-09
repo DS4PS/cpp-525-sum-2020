@@ -33,9 +33,9 @@ Submit Button - <a class="uk-button uk-button-primary" href="{{page.canvas.assig
 
 ## Week 1 - Interrupted Time Series 
 
-<a class="uk-button uk-button-default" href="https://ds4ps.org/pe4ps-textbook/docs/p-020-time-series.html">LECTURE</a>
-<br>
-<a class="uk-button uk-button-default" href="https://ds4ps.org/pe4ps-textbook/labs/time-series-lab.html">LAB INSTRUCTIONS</a>
+<a class="uk-button uk-button-default" style="width:200px" href="https://ds4ps.org/pe4ps-textbook/docs/p-020-time-series.html">LECTURE</a>
+<br><br>
+<a class="uk-button uk-button-default" style="width:200px" href="https://ds4ps.org/pe4ps-textbook/labs/time-series-lab.html">LAB INSTRUCTIONS</a>
 
 **Due {{page.labs.lab-01}}**
 
